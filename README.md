@@ -19,7 +19,7 @@
 
 <h2> 🤳 Connect with me:</h2>
 
-[<img align="left" width="22px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_icon.svg/2048px-LinkedIn_icon.svg.png"/>][linkedin]
+[<img align="left" width="100px" src="https://static.vecteezy.com/system/resources/previews/023/986/970/non_2x/linkedin-logo-linkedin-logo-transparent-linkedin-icon-transparent-free-free-png.png"/>][linkedin]
 
 [linkedin]: https://linkedin.com/in/christopher-cortes-sanchez
 
