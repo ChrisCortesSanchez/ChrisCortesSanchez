@@ -1,7 +1,30 @@
-## Hi there 👋
+<h1>Hi, I'm Christopher! <br/><a href="https://github.com/joshmadakor1">Programmer</a>, <a href="https://www.linkedin.com/in/joshmadakor/">Cybersecurity Professional</a>, <a href="https://www.youtube.com/c/joshmadakor">YouTuber</a></h1>
+
+<h2>👨‍💻 Cybersecurity Projects:</h2>
+
+  - [Medium Interaction Honeypot](https://github.com/ChrisCortesSanchez/HoneySentinel)
+
+  - [Quantum Resistant Signature](https://github.com/Jflores427/Cryptography-Legal-Industry)
+
+<h2>👨‍💻 Software Development Projects</h2>
+
+- [Geographic Data App](https://github.com/ChrisCortesSanchez/bnrs)
+
+
+
+<h2>📺 Certifications</h2>
+
+- [CodePath Intermediate Cybersecurity](https://www.youtube.com/watch?v=a83ASGn_V_s)
+- [A Day in the Life of a Cybersecurity Anayst](https://www.youtube.com/watch?v=uHy3oM7NnoU)
+
+<h2> 🤳 Connect with me:</h2>
+
+[<img align="left" width="22px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_icon.svg/2048px-LinkedIn_icon.svg.png"/>][linkedin]
+
+[linkedin]: https://linkedin.com/in/christopher-cortes-sanchez
 
 <!--
-**ChrisCortesSanchez/ChrisCortesSanchez** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+**joshmadakor1/joshmadakor1** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
 Here are some ideas to get you started:
 
