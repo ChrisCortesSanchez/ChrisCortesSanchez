@@ -2,6 +2,8 @@
 
 <h2>🛡️ Cybersecurity Projects:</h2>
 
+  - [Log Analysis with Machine Learning](https://github.com/ChrisCortesSanchez/LogGuardian)
+    
   - [Medium Interaction Honeypot](https://github.com/ChrisCortesSanchez/HoneySentinel)
 
   - [Quantum Resistant Signature](https://github.com/Jflores427/Cryptography-Legal-Industry)
