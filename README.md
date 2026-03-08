@@ -10,7 +10,7 @@
 
 <h2>💻 Software Development Projects</h2>
 
-- [Geographic Data App](https://github.com/ChrisCortesSanchez/bnrs)
+- [Geographic Data App](https://github.com/ninal1811/project-sens)
 
 
 
