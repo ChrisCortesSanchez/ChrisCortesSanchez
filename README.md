@@ -5,60 +5,61 @@
 │                                                         │
 │   > whoami                                              │
 │   Christopher Cortes-Sanchez                            │
-│   CS @ NYU Tandon '26  |  Cybersecurity & Math Minor    │
-│   Aspiring SOC Analyst & Security Engineer              │
+│   NYU Tandon CS '26  |  Security+  |  Cyber & Math      │
+│   Security Engineer  |  AppSec  |  DevSecOps  |  Cloud  │
 │                                                         │
 └─────────────────────────────────────────────────────────┘
 ```
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=github&logoColor=00ff88)](https://chriscortessanchez.github.io/)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/chriscortessanchez)
+[![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=github&logoColor=00ff88)](https://chriscortessanchez.com/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/christopher-cortes-sanchez/)
 [![Email](https://img.shields.io/badge/Email-cc7825@nyu.edu-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:cc7825@nyu.edu)
 
 </div>
 
 ---
 
-## 🔐 Cybersecurity Projects
+## 🔐 Security Projects
 
-### [SafeBuyr — Vulnerable E-Commerce Platform & Scanner](https://github.com/ChrisCortesSanchez/SafeBuyr)
-An intentionally vulnerable e-commerce app paired with an **automated 8-phase vulnerability scanner** that achieves a 95% risk score reduction. Full CI/CD pipeline with regression tests covering SQLi, XSS, IDOR, CSRF, and security headers.
+### [SafeBuyr — Automated Security Scanner for a Live E-Commerce App](https://github.com/ChrisCortesSanchez/SafeBuyr)
+An 8-phase automated scanner for a Flask/Docker e-commerce app. It proves each vulnerability is exploitable, fixes it, then verifies the fix held, covering SQL injection, XSS, CSRF, session management, input validation, and password storage. Risk score dropped from **37/100 to 2/100** across 6 OWASP Top 10 classes. All 6 checks run in **GitHub Actions**, so no deployment ships without clearing every test.
 
-`Python` `Flask` `SQL Injection` `XSS` `CSRF` `IDOR` `CI/CD` `GitHub Actions`
-
----
-
-### [T-Pot Honeypot Deployment](https://github.com/ChrisCortesSanchez/Tpot)
-Deployed a **T-Pot honeypot** on DigitalOcean to capture and analyze live attack traffic. Logged **500+ unique attackers** across 20+ countries, capturing real-world exploitation attempts including brute force, port scanning, and malware delivery — all visualized through Kibana dashboards.
-
-`T-Pot` `DigitalOcean` `Linux` `Kibana` `Threat Intelligence` `Network Security`
+`Python` `Flask` `Docker` `GitHub Actions` `OWASP Top 10`
 
 ---
 
 ### [AWS Cloud Security Posture Management (CSPM) Tool](https://github.com/ChrisCortesSanchez/AWS-CSPM)
-*(In active development)* — Python-based **CSPM tool** using boto3 and Click with modular scanners mapped to **CIS Benchmark controls**. Will scan IAM, S3, EC2, and CloudTrail configurations for misconfigurations and generate HTML/JSON remediation reports.
+Checks **26 CIS Benchmark v1.5.0 controls** across AWS IAM, S3, CloudTrail, EC2, and password policy, then generates a prioritized HTML/JSON remediation report with a 0-100 risk score. It found 4 real gaps in a live account, including disabled audit logging. CI runs **36 moto-mocked tests** on every push, so no credentials ever touch the pipeline.
 
-`Python` `boto3` `AWS` `CIS Benchmarks` `Click` `Jinja2` `moto`
+`Python` `AWS` `boto3` `CIS Benchmarks` `GitHub Actions` `moto`
+
+---
+
+### [Honeypot Threat Intelligence Pipeline](https://github.com/ChrisCortesSanchez/Honeypot-Threat-Intelligence-Pipeline)
+Multi-sensor honeypot on DigitalOcean (Cowrie, Dionaea, Honeytrap) plus an analysis pipeline over **193,139 real attack events** from 6,713 unique IPs. It surfaced two active campaigns, a Solana credential-harvesting operation and a Mirai-variant botnet, catalogued 62,201 malware samples, and grouped attacker activity into 8 clusters in HTML and JSON reports.
+
+`Python` `Elasticsearch` `DigitalOcean` `Threat Intelligence`
 
 ---
 
-### [Quantum-Resistant Legal Document Protection](https://github.com/Jflores427/Cryptography-Legal-Industry)
-Team project implementing **ML-KEM-768** post-quantum cryptography to secure legal document integrity against future quantum threats.
+## 🌍 Software Engineering Capstone
 
-`Python` `ML-KEM-768` `Post-Quantum Cryptography` `Security`
-
----
- 
-## 🌍 Software Development Projects
- 
 ### [Project SENS — Geographic Food Discovery App](https://github.com/ninal1811/project-sens)
-Full-stack web app built with a team under professor oversight. Displays an **interactive world map** — click a country to get its national dish, drill into a state for the regional dish, then into a city for a recommended local restaurant serving that dish. Features a Flask/MongoDB backend and React/Vite frontend with CI/CD integration.
- 
+Full-stack web app built by a team under professor oversight. Click a country for its national dish, drill into a state for the regional dish, then into a city for a local restaurant serving it. Flask/MongoDB backend, React/Vite frontend, CI/CD, and Docker.
+
+**My role: I was responsible for the project's security, from writing the security goals in January 2026 through the backend auth layer.** What I built:
+
+- Session-based authentication with bcrypt password hashing, email login, registration, and password updates, wired end to end between the React frontend and the Flask backend
+- Authentication on the CRUD endpoints, plus role-based access control (user vs. developer) enforced by a custom decorator that accepts either a session cookie or an API key header
+- A developer-only log viewer restricted to an allowlist of specific log files, with compressed logs excluded and API-key auth in front of it
+- Secrets moved out of source into environment variables, `Secure` session cookies, and a credentialed CORS configuration for the cross-origin frontend
+
 [Backend](https://github.com/ninal1811/project-sens) · [Frontend](https://github.com/ninal1811/project-sens-frontend)
- 
+
 `Python` `Flask` `MongoDB` `React` `Vite` `REST APIs` `CI/CD` `Docker`
- 
+
 ---
+
 ## 🛠️ Tech Stack
 
 **Languages**
@@ -74,8 +75,8 @@ Full-stack web app built with a team under professor oversight. Displays an **in
 ![Burp Suite](https://img.shields.io/badge/Burp_Suite-FF6633?style=flat-square&logo=portswigger&logoColor=white)
 ![Wireshark](https://img.shields.io/badge/Wireshark-1679A7?style=flat-square&logo=wireshark&logoColor=white)
 ![Nmap](https://img.shields.io/badge/Nmap-0E83CD?style=flat-square&logo=nmap&logoColor=white)
-![Metasploit](https://img.shields.io/badge/Metasploit-2596CD?style=flat-square&logo=metasploit&logoColor=white)
-![pwntools](https://img.shields.io/badge/pwntools-000000?style=flat-square&logoColor=white)
+![Splunk](https://img.shields.io/badge/Splunk-000000?style=flat-square&logo=splunk&logoColor=white)
+![Elasticsearch](https://img.shields.io/badge/Elasticsearch-005571?style=flat-square&logo=elasticsearch&logoColor=white)
 
 **Cloud & Infrastructure**
 
@@ -94,27 +95,13 @@ Full-stack web app built with a team under professor oversight. Displays an **in
 
 ## 📚 Currently
 
-- 🎓 Finishing BS in Computer Science @ NYU Tandon (May 2026)
-- ☁️ Building out the AWS CSPM tool with expanded CIS Benchmark coverage
-- 🎯 Competing in CTF competitions — HackTheBox, TryHackMe, Buckeye CTF
-- 🔍 Actively seeking **SOC Analyst** and **Security Engineer** roles for Summer 2026
+- 🎓 BS in Computer Science, NYU Tandon (May 2026), CompTIA Security+ (June 2026)
+- 🔧 Expanding SafeBuyr with Trivy and Semgrep scanning in CI, plus Kubernetes deployment
+- 🏁 CTFs: SHPE 2025 National Cybersecurity Challenge (8th place), Buckeye CTF
+- 🔍 Looking for **Application Security**, **DevSecOps**, and **Cloud Security Engineer** roles in NYC or remote
 
 ---
 
 <div align="center">
 <sub>Built with curiosity. Secured with intent.</sub>
 </div>
-<!--
-**ChrisCortesSanchez/ChrisCortesSanchez** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
